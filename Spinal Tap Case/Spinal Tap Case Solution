@@ -1,0 +1,20 @@
+#####Setup#####
+
+Intermediate Algorithm Scripting: Spinal Tap Case
+
+Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.
+
+#####Solution#####
+
+const spinalCase = str => 
+
+str
+.match(/s\W|(\s\w+)|([A-Z][a-z]+)|(^[a-z]+)|-(\w+)/g)
+.join()
+.replace(/\s+|-/g,'')
+.split(',')
+.join('-')
+.toLowerCase()
+
+
+#####End#####
