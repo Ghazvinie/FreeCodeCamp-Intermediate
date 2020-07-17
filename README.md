@@ -1,2 +1,5 @@
 # FreeCodeCamp-Intermediate
-My solutions to the intermediate algorithm problems
+
+My solutions to the intermediate algorithm problems.
+
+Each branch has the setup and my solution. 
