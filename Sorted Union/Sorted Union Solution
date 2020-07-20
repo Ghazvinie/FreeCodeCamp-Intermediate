@@ -14,11 +14,11 @@ Check the assertion tests for examples.
 
 const uniteUnique = (...arr) => {
 
-arr = [].concat(...arr);
-arr = [...new Set(arr)]
+  arr = [].concat(...arr);
+  arr = [...new Set(arr)];
+    
+    return arr;
   
-  return arr;
-
-}
+  };
 
 #####End#####
