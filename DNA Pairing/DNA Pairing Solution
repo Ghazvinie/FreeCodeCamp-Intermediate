@@ -18,7 +18,7 @@ const pairElement = str => {
   
   str = str.split('');
   
-  for (var i = 0; i < str.length; i++){
+  for (let i = 0; i < str.length; i++){
     switch (str[i]){
       case 'A' : str[i] = str[i] + 'T';
       break;
