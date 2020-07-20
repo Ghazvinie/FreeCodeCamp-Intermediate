@@ -11,10 +11,10 @@ You have to use the arguments object.
 
 const destroyer = arr => {
 
-var args  = Array.prototype.slice.call(arguments)
-
-return arr.filter(element => !args.includes(element))
-
-}
+  var args  = Array.prototype.slice.call(arguments);
+  
+  return arr.filter(element => !args.includes(element));
+  
+  };
 
 #####End#####
