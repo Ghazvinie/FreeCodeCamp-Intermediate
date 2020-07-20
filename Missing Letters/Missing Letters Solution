@@ -10,19 +10,19 @@ If all letters are present in the range, return undefined.
 
 const fearNotLetter = str => {
 
-var alpha = 'abcdefghijklmnopqrstuvwxyz'
-
-if (str === alpha){
-  return undefined
-}
-
-alpha = alpha.slice(alpha.indexOf(str[0]))
-
-for (var i = 0; i < str.length; i++){
-  if (str.charAt(i) !== alpha[i]){
-    return alpha[i]
+  var alpha = 'abcdefghijklmnopqrstuvwxyz';
+  
+  if (str === alpha){
+    return undefined;
   }
- }
-}
-
+  
+  alpha = alpha.slice(alpha.indexOf(str[0]));
+  
+  for (var i = 0; i < str.length; i++){
+    if (str.charAt(i) !== alpha[i]){
+      return alpha[i];
+    }
+   }
+  };
+  
 #####End#####
