@@ -21,7 +21,7 @@ const sumFibs = num => {
   
   return numsArr
   .filter(element => element <= num && element % 2)
-  .reduce((accumulator, currentValue) => accumulator + currentValue);
+  .reduce((accum, curr) => accum + curr);
   
   };
 
