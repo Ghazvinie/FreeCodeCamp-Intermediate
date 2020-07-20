@@ -10,7 +10,7 @@ If all letters are present in the range, return undefined.
 
 const fearNotLetter = str => {
 
-  var alpha = 'abcdefghijklmnopqrstuvwxyz';
+  let alpha = 'abcdefghijklmnopqrstuvwxyz';
   
   if (str === alpha){
     return undefined;
@@ -18,7 +18,7 @@ const fearNotLetter = str => {
   
   alpha = alpha.slice(alpha.indexOf(str[0]));
   
-  for (var i = 0; i < str.length; i++){
+  for (let i = 0; i < str.length; i++){
     if (str.charAt(i) !== alpha[i]){
       return alpha[i];
     }
