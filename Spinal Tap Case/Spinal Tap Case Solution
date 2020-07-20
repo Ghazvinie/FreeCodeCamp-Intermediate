@@ -14,7 +14,7 @@ str
 .replace(/\s+|-/g,'')
 .split(',')
 .join('-')
-.toLowerCase()
+.toLowerCase();
 
 
 #####End#####
