@@ -16,24 +16,24 @@ The character and its pair are paired up in an array, and all the arrays are gro
 
 const pairElement = str => {
   
-str = str.split('')
-
-for (var i = 0; i < str.length; i++){
-  switch (str[i]){
-    case 'A' : str[i] = str[i] + 'T'
-    break;
-    case 'C' : str[i] = str[i] + 'G'
-    break;
-    case 'G' : str[i] = str[i] + 'C'
-    break;
-    case 'T' : str[i] = str[i] + 'A'
-    break;
+  str = str.split('');
+  
+  for (var i = 0; i < str.length; i++){
+    switch (str[i]){
+      case 'A' : str[i] = str[i] + 'T';
+      break;
+      case 'C' : str[i] = str[i] + 'G';
+      break;
+      case 'G' : str[i] = str[i] + 'C';
+      break;
+      case 'T' : str[i] = str[i] + 'A';
+      break;
+    }
+    str[i] = str[i].split('');
   }
-  str[i] = str[i].split('')
-}
-
-return str
-
-}
+  
+  return str;
+  
+  };
 
 #####Setup#####
