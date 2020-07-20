@@ -14,15 +14,15 @@ Translate the provided string to Pig Latin. Input strings are guaranteed to be E
 
 const translatePigLatin = str => {
 
-if (str.match(/^[aeiou]/)){
-  return str + 'way'
-}
-
-var beginMatch = str.match(/^[^aeiou]+/g).join()
-var deleteFirst = str.slice(beginMatch.length)
-
-return deleteFirst + beginMatch + 'ay'
-
-}
+  if (str.match(/^[aeiou]/)){
+    return str + 'way';
+  }
+  
+  var beginMatch = str.match(/^[^aeiou]+/g).join();
+  var deleteFirst = str.slice(beginMatch.length);
+  
+  return deleteFirst + beginMatch + 'ay';
+  
+  };
 
 #####End#####
