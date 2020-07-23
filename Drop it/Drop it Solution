@@ -10,9 +10,9 @@ Then return the rest of the array once the condition is satisfied, otherwise, ar
 
 const dropElements = (arr, func) => {
 
-  arr = arr.slice(arr.indexOf(arr.find(element => func(element) === true)),arr.length);
+  arr = arr.slice(arr.indexOf(arr.find(element => func(element))),arr.length);
   
-  if (func(...arr) === false){
+  if (!func(...arr)){
     return [];
   }
   return arr;
