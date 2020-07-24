@@ -4,8 +4,8 @@ const translatePigLatin = str => {
     return str + 'way';
   }
   
-  var beginMatch = str.match(/^[^aeiou]+/g).join();
-  var deleteFirst = str.slice(beginMatch.length);
+  let beginMatch = str.match(/^[^aeiou]+/g).join();
+  let deleteFirst = str.slice(beginMatch.length);
   
   return deleteFirst + beginMatch + 'ay';
   
