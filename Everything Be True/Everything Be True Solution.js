@@ -1,1 +1,1 @@
-const truthCheck = (collection, pre) => collection.every(element => element[pre]);
+const truthCheck = (collection, pre) => collection.every(object => object[pre]);
